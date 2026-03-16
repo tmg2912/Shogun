@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shogun Car Wash | Lavado Premium en Asunción</title>
+    <meta name="description" content="Lavado de autos premium en Asunción, Paraguay. Shogun Car Wash ofrece servicio rápido, atención al detalle y productos de alta calidad.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 py-6 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 z-50">
+                <i data-lucide="spray-can" class="w-8 h-8 text-shogun-red"></i>
+                <span class="text-2xl font-bold uppercase tracking-wider shogun-font">Shogun</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#servicios" class="text-sm font-medium hover-red-text transition-colors">Servicios</a>
+                <a href="#por-que-elegirnos" class="text-sm font-medium hover-red-text transition-colors">Nosotros</a>
+                <a href="#testimonios" class="text-sm font-medium hover-red-text transition-colors">Testimonios</a>
+                <a href="#ubicacion" class="text-sm font-medium hover-red-text transition-colors">Ubicación</a>
+                <a href="https://wa.me/595981742315" target="_blank" class="btn-primary text-sm py-2 px-4">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Reservar
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden z-50 text-white p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-shogun-dark bg-opacity-95 backdrop-blur-md pt-24 px-4 flex flex-col gap-6 items-center md:hidden">
+            <a href="#servicios" class="text-xl font-medium hover-red-text">Servicios</a>
+            <a href="#por-que-elegirnos" class="text-xl font-medium hover-red-text">Nosotros</a>
+            <a href="#testimonios" class="text-xl font-medium hover-red-text">Testimonios</a>
+            <a href="#ubicacion" class="text-xl font-medium hover-red-text">Ubicación</a>
+            <a href="https://wa.me/595981742315" target="_blank" class="btn-primary mt-4 w-full max-w-xs">
+                Reservar Turno
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center hero-bg pt-20">
+        <div class="absolute inset-0 bg-gradient-to-t from-shogun-dark via-transparent to-transparent"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center hero-content">
+            <span class="text-shogun-red font-semibold tracking-[0.2em] uppercase text-sm mb-4 block">El Arte del Cuidado Automotriz</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 shogun-font leading-tight">
+                Shogun <br/><span class="text-white">Car Wash</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                Lavado de autos premium en Asunción. Restauramos el brillo y protegemos su inversión con precisión japonesa.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/595981742315" target="_blank" class="btn-primary w-full sm:w-auto">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Contactar por WhatsApp
+                </a>
+                <a href="tel:+595981742315" class="btn-secondary w-full sm:w-auto">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    Llamar Ahora
+                </a>
+                <a href="#ubicacion" class="btn-secondary w-full sm:w-auto border-transparent hover:bg-transparent hover:text-white hover:underline">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    Cómo llegar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 px-4 bg-shogun-dark">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold section-title text-center block shogun-font">Nuestros Servicios</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i data-lucide="droplets" class="w-8 h-8 text-shogun-red"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lavado Exterior</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Limpieza profunda de carrocería, llantas y cristales usando espuma activa y microfibras premium para evitar rayones.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i data-lucide="armchair" class="w-8 h-8 text-shogun-red"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Limpieza Interior</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Aspirado meticuloso, limpieza de tableros, acondicionado de plásticos y tratamiento para asientos de cuero o tela.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i data-lucide="sparkles" class="w-8 h-8 text-shogun-red"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lavado Completo</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        El paquete definitivo. Incluye lavado exterior detallado, limpieza interior profunda y desodorización del habitáculo.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i data-lucide="shield" class="w-8 h-8 text-shogun-red"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Encerado y Protección</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Aplicación de cera de carnauba o sellador cerámico para un brillo extremo y protección duradera contra el clima.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="por-que-elegirnos" class="py-24 px-4 bg-shogun-gray border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title shogun-font">Por Qué Elegirnos</h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        En Shogun Car Wash no solo lavamos autos, aplicamos la disciplina y precisión para entregar un resultado impecable en cada visita.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 feature-card p-4 bg-shogun-dark">
+                            <i data-lucide="timer" class="w-6 h-6 text-shogun-red shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Servicio Rápido y Eficiente</h4>
+                                <p class="text-sm text-gray-400 mt-1">Optimizamos nuestro proceso para devolverle su vehículo reluciente en el menor tiempo posible sin comprometer la calidad.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 feature-card p-4 bg-shogun-dark">
+                            <i data-lucide="award" class="w-6 h-6 text-shogun-red shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Productos de Alta Calidad</h4>
+                                <p class="text-sm text-gray-400 mt-1">Utilizamos solo shampoos con pH neutro, ceras premium y microfibras especializadas que protegen la pintura.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 feature-card p-4 bg-shogun-dark">
+                            <i data-lucide="eye" class="w-6 h-6 text-shogun-red shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Atención al Detalle</h4>
+                                <p class="text-sm text-gray-400 mt-1">Nos enfocamos en las áreas que otros pasan por alto: marcos de puertas, salidas de aire y rines impecables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Detalle de lavado" class="rounded-lg shadow-2xl shadow-red-900/20 w-full object-cover h-[600px] border border-white/10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="py-24 px-4 bg-shogun-dark">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold section-title text-center block shogun-font">La Voz del Shogun</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="testimonial-card relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-8 h-8 text-white/5"></i>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Excelente servicio. Mi camioneta quedó como nueva, el nivel de detalle en el interior es impresionante. Muy rápidos y amables."</p>
+                    <div class="font-bold text-shogun-red">- Carlos M.</div>
+                </div>
+
+                <div class="testimonial-card relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-8 h-8 text-white/5"></i>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Totalmente recomendado. Fui por un encerado y la pintura recuperó un brillo que no veía desde que lo saqué de la concesionaria."</p>
+                    <div class="font-bold text-shogun-red">- Laura G.</div>
+                </div>
+
+                <div class="testimonial-card relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-8 h-8 text-white/5"></i>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Calidad premium real. Me gusta que cuidan cada detalle y usan buenos productos. El mejor car wash de Asunción sin duda."</p>
+                    <div class="font-bold text-shogun-red">- Roberto V.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="ubicacion" class="py-24 px-4 bg-shogun-gray border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="location-info flex flex-col justify-center">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title shogun-font">Encuéntranos</h2>
+                    
+                    <div class="space-y-8 mt-4">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-shogun-dark p-3 rounded-full shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-shogun-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Dirección</h4>
+                                <p class="text-gray-400">Av. San Martín 1450<br>Asunción, Paraguay</p>
+                                <span class="text-xs text-gray-500 mt-1 block">Plus Code: P9XR+5Q Asunción</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-shogun-dark p-3 rounded-full shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-shogun-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Horario</h4>
+                                <p class="text-gray-400">Lunes a Sábado<br>8:00 AM - 19:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-shogun-dark p-3 rounded-full shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-shogun-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Contacto</h4>
+                                <p class="text-gray-400">+595 981 742315</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container h-[400px] lg:h-auto min-h-[400px]">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.726207860492!2d-57.5768224!3d-25.2798952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE2JzQ3LjYiUyA1N8KwMzQnMzYuNiJX!5e0!3m2!1sen!2sus!4v1630000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-24 px-4 bg-shogun-red relative overflow-hidden">
+        <!-- Abstract background pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10 cta-content">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 shogun-font">¿Listo para renovar tu vehículo?</h2>
+            <p class="text-white/80 text-xl mb-10 max-w-2xl mx-auto">
+                Agenda tu turno hoy mismo y experimenta el nivel de limpieza y detalle que tu auto merece.
+            </p>
+            <a href="https://wa.me/595981742315" target="_blank" class="inline-flex items-center gap-3 bg-white text-shogun-red px-8 py-4 rounded-md font-bold text-lg hover:bg-gray-100 transition-colors shadow-xl hover:-translate-y-1 transform duration-300">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+                Contactar por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-shogun-dark border-t border-white/5 pt-16 pb-8 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="flex items-center gap-2 mb-6">
+                        <i data-lucide="spray-can" class="w-8 h-8 text-shogun-red"></i>
+                        <span class="text-2xl font-bold uppercase tracking-wider shogun-font text-white">Shogun</span>
+                    </a>
+                    <p class="text-gray-400 max-w-md">
+                        Servicio de lavado de autos premium en Asunción. Dedicación, detalle y productos de la más alta calidad para su vehículo.
+                    </p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://instagram.com/shoguncarwash" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-shogun-red transition-colors text-white">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://wa.me/595981742315" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-shogun-red transition-colors text-white">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg">Enlaces Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#servicios" class="text-gray-400 hover:text-shogun-red transition-colors">Servicios</a></li>
+                        <li><a href="#por-que-elegirnos" class="text-gray-400 hover:text-shogun-red transition-colors">Nosotros</a></li>
+                        <li><a href="#testimonios" class="text-gray-400 hover:text-shogun-red transition-colors">Testimonios</a></li>
+                        <li><a href="#ubicacion" class="text-gray-400 hover:text-shogun-red transition-colors">Ubicación</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg">Contacto</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-shogun-red shrink-0 mt-0.5"></i>
+                            <span>Av. San Martín 1450, Asunción, Paraguay</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-5 h-5 text-shogun-red shrink-0"></i>
+                            <span>+595 981 742315</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="clock" class="w-5 h-5 text-shogun-red shrink-0"></i>
+                            <span>Lun - Sáb: 8:00 - 19:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 Shogun Car Wash. Todos los derechos reservados.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Asunción, Paraguay
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/595981742315" target="_blank" class="floating-whatsapp" aria-label="Contactar por WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
